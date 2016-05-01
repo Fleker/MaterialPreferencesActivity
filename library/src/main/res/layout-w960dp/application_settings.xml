@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/pref_background_view"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp" /><!--
+    <LinearLayout
+        android:id="@+id/parent_of_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_alignParentBottom="true" >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"/>-->
+        <fragment
+            android:layout_width="480dp"
+            android:name="com.felkertech.materialpreferencesactivity.MaterialPreferencesActivity$MaterialPreferencesFragment"
+            android:id="@+id/pref_fragment"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="160dp" />
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"/>
+    </LinearLayout>-->
+</RelativeLayout>

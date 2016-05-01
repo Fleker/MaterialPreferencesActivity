@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="material_preferences_activity_enable_leanback">true</bool>
+</resources>

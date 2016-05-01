@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jenzz.materialpreference.SwitchPreference
+        android:key="@string/sm_switch1"
+        android:title="@string/sm_switch1"
+        android:defaultValue="false"/>
+    <com.jenzz.materialpreference.SwitchPreference
+        android:key="@string/sm_switch2"
+        android:title="@string/sm_switch2"
+        android:defaultValue="true"/>
+    <com.jenzz.materialpreference.Preference
+        android:key="@string/sm_text1"
+        android:title="@string/sm_text1" />
+
+    <com.jenzz.materialpreference.PreferenceCategory
+        android:title="More Things">
+        <com.jenzz.materialpreference.Preference
+            android:inputType="number"
+            android:numeric="integer"
+            android:key="@string/sm_number1"
+            android:title="@string/sm_number1"
+            android:defaultValue="0"/>
+        <com.jenzz.materialpreference.Preference
+            android:inputType="number"
+            android:numeric="integer"
+            android:key="@string/sm_radio1"
+            android:title="@string/sm_radio1"/>
+    </com.jenzz.materialpreference.PreferenceCategory>
+    <com.jenzz.materialpreference.PreferenceCategory
+        android:title="@string/marsh">
+        <com.jenzz.materialpreference.Preference
+            android:key="@string/marsh"
+            android:title="@string/marsh">
+            </com.jenzz.materialpreference.Preference>
+    </com.jenzz.materialpreference.PreferenceCategory>
+    <com.jenzz.materialpreference.PreferenceCategory
+        android:title="Last Stuff">
+        <com.jenzz.materialpreference.Preference
+            android:title="@string/action_about"
+            android:key="@string/action_about"
+            />
+        <com.jenzz.materialpreference.Preference
+            android:title="@string/secret"
+            android:key="@string/secret"/>
+        <com.jenzz.materialpreference.Preference
+            android:title="GitHub"
+            android:key="github"
+            android:summary="Source code on GitHub">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/fleker/MaterialPreferencesActivity"
+                />
+        </com.jenzz.materialpreference.Preference>
+    </com.jenzz.materialpreference.PreferenceCategory>
+</PreferenceScreen>
